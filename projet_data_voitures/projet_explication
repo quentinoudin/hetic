@@ -1,0 +1,43 @@
+# Projet DATA
+
+## Contexte métier
+
+Comment un garage spécialisé dans les voitures sportives et de prestige peut-il sélectionner les modèles les plus rentables et désirables pour son stock, sans se fier uniquement à son intuition ou aux tendances passagères, afin d'optimiser sa rotation de stock et sa marge bénéficiaire ?
+
+## Contraintes métier
+
+- **Budget d'acquisition limité :** Impossibilité de stocker simultanément des hypercars à plusieurs millions et des hot hatchs à 30-50k€
+- **Espace showroom restreint :** Nécessité de maximiser l'attractivité des 8-15 véhicules exposés
+- **Rotation de stock critique :** Un véhicule immobilisé >90 jours génère des coûts (assurance, dépréciation, coût d'opportunité)
+- **Clientèle hétérogène :** Segments variés (collectionneurs hypercars, enthousiastes week-end, familles cherchant berlines sportives) nécessitant un mix produit équilibré
+- **Absence de données marché temps réel :** Pas d'informations sur délai de vente moyen par modèle, élasticité-prix, ou saisonnalité de la demande
+- **Risque de dépréciation :** Certains segments (électriques récents, éditions limitées) ont des trajectoires de valeur imprévisibles
+
+## Données disponibles
+
+| Modèle / Variante | Cote Argus | Prix de vente conseillé | Délai de vente moyen | Score Popularité | Volume Google Trends | Engagement Instagram | Disponibilité Marché | Entretien Annuel (Est.) | Segment | Continent | Année | Moteur | Cylindrée (L) | Puissance (ch) | Poids (kg) | Rapport Poids/Puiss | Note Presse (/10) | Volume Coffre (L) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+## Question métier centrale
+
+### Hypothèses métier
+
+#### H1 - Les Supercars battent les Hypercars en rentabilité
+
+Les véhicules 200-500k€ génèrent un ROI supérieur aux modèles >1M€ grâce à une rotation 3× plus rapide qui compense leur marge brute inférieure.
+
+#### H2 - La popularité prédit le délai de vente
+
+Un Score Popularité ≥85/100 réduit le délai de vente de 40% indépendamment du prix, transformant la notoriété digitale en liquidité commerciale.
+
+#### H3 - Le mix 50/30/20 maximise le chiffre d'affaires
+
+Un showroom équilibré (50% <100k€, 30% Supercars, 20% Hypercars) optimise rotation et marge tout en respectant la contrainte des 90 jours d'immobilisation.
+
+#### H4 - Les véhicules électriques sont plus risqués
+
+Les motorisations électriques présentent une volatilité de prix 2× supérieure aux thermiques, rendant leur dépréciation imprévisible sans données marché temps réel.
+
+#### H5 - Performance technique justifie une prime de prix
+
+Les véhicules avec Rapport Poids/Puissance <2.0 ET Note Presse ≥9.5/10 se vendent avec +25% de marge sans allonger le délai de vente.
