@@ -39,8 +39,7 @@ pip install pandas numpy plotly openpyxl
 
 Ou avec le fichier requirements.txt :
 ```bash
-pip install -r requirements.txt
-```
+
 
 ## Dépendances
 
